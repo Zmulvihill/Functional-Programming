@@ -1,13 +1,10 @@
-//Apply Functional Programming to Convert Strings to URL Slugs
-// Only change code below this line
-function urlSlug(title) {
-    return title
-      .toLowerCase()
-      .trim()
-      .split(/\s+/)
-      .join("-");
+//Use the every Method to Check that Every Element in an Array Meets a Criteria
+function checkPositive(arr) {
+    // Only change code below this line
+   return arr.every(val => val > 0);
+  
+    // Only change code above this line
   }
-  // Only change code above this line
-  console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"))
-  console.log(urlSlug("Winter Is Coming"))
-  console.log(urlSlug("Hold The Door"))
+  console.log(checkPositive([1, 2, 3, -4, 5]))
+  console.log(checkPositive([1, 2, 3, 4, 5]))
+  console.log(checkPositive([1, -2, 3, -4, 5]))
